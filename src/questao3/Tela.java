@@ -5,10 +5,6 @@
  */
 package questao3;
 
-/**
- *
- * @author henri
- */
 public class Tela extends javax.swing.JFrame {
 
     /**
@@ -97,7 +93,9 @@ public class Tela extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void calcularMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_calcularMouseClicked
-        resultado.setText("64");
+        Calculadora objeto = new Calculadora();
+        objeto.setEquacao(conta.getText());
+        resultado.setText(objeto.calcular());
     }//GEN-LAST:event_calcularMouseClicked
 
     /**
